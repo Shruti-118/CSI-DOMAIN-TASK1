@@ -198,3 +198,133 @@ main {
 .btn:hover { 
     transform: translateY(-1px); 
 }
+.btn.primary { 
+    background: #d7f36b; 
+    border-color: #d7f36b; 
+}
+.btn.dark { 
+    background: #172018; 
+    color: white; 
+}
+.btn.light { 
+    background: white; 
+}
+.btn.outline { 
+    background: transparent; 
+}
+.btn.selected { 
+    background: #172018; 
+    color: white; 
+}
+.btn.small { 
+    min-height: 36px; 
+    padding: 0 12px; 
+    font-size: 13px; 
+}
+.btn.large { 
+    min-height: 50px; 
+    padding: 0 22px; 
+}
+.btn.full { 
+    width: 100%; 
+}
+.btn:disabled { 
+    opacity: .55; 
+    cursor: not-allowed; 
+}
+.benefits { 
+    background: white; 
+    border-bottom: 1px solid #dedfd9; 
+}
+.benefit-grid { 
+    display: grid; 
+    grid-template-columns: repeat(3,1fr); padding: 23px 0; 
+    gap: 20px; 
+}
+.benefit-grid > div { 
+    display: flex; 
+    align-items: center; 
+    gap: 13px; 
+    justify-content: center; 
+}
+.benefit-grid svg { 
+    width: 23px; 
+}
+.benefit-grid b, .benefit-grid small { 
+    display: block; 
+}
+.benefit-grid small {
+    color: #6e746e; 
+    margin-top: 3px; 
+}
+.section { 
+    padding: 80px 0; 
+}
+.section-heading, .page-heading { 
+    display: flex; 
+    align-items: end; 
+    justify-content: space-between; margin-bottom: 30px;
+}
+.section-heading h2, .page-heading h1 { 
+    margin: 0; 
+    font-size: clamp(32px, 5vw, 52px); letter-spacing: -2.5px; 
+}
+.section-heading p, .page-heading p {
+    margin-bottom: 7px; 
+}
+.text-link, .back-link { 
+    display: inline-flex; 
+    align-items: center; 
+    gap: 5px; 
+    font-weight: 800; 
+}
+.product-grid { 
+    display: grid; 
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 18px; 
+}
+.product-card { 
+    background: #fffefa; 
+    border: 1px solid #dedfd9; 
+    border-radius: 18px; 
+    overflow: hidden; 
+    transition: transform .2s, box-shadow .2s; 
+}
+.product-card:hover { 
+    transform: translateY(-4px); 
+    box-shadow: 0 15px 40px rgba(23,32,24,.08);
+}
+.product-image-wrap { 
+    position: relative; 
+    height: 260px; 
+    background: #f0f0eb; 
+    display: grid; 
+    place-items: center; 
+    padding: 25px; 
+}
+.product-image-wrap img { 
+    width: 100%; 
+    height: 100%; 
+    object-fit: contain; 
+    mix-blend-mode: multiply; 
+}
+.icon-btn { 
+    border: 1px solid #dedfd9; 
+    background: white; 
+    width: 38px; 
+    height: 38px; 
+    border-radius: 50%; 
+    display: inline-grid; 
+    place-items: center; 
+}
+.wishlist-btn { 
+    position: absolute; 
+    top: 12px; 
+    right: 12px; 
+}
+.icon-btn.active { 
+    color: #c23c4b; 
+}
+.product-card-body { 
+    padding: 18px;
+}
