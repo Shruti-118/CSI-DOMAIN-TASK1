@@ -453,3 +453,120 @@ main {
     display: grid; 
     gap: 12px; 
 }
+.cart-list { 
+    display: grid; 
+    gap: 12px; 
+}
+.cart-item, .wishlist-item, .order-card, .profile-card, .summary, .checkout-form { 
+    background: white; 
+    border: 1px solid #dedfd9; 
+    border-radius: 18px; 
+}
+.cart-item { 
+    display: grid; 
+    grid-template-columns: 90px 1fr auto auto; 
+    gap: 18px; 
+    align-items: center; 
+    padding: 14px; 
+}
+.cart-item img { 
+    width: 90px; 
+    height: 90px; 
+    object-fit: contain; 
+    background: #f2f2ee; 
+    border-radius: 12px; 
+}
+.cart-info h3 { 
+    margin: 0 0 6px; 
+    font-size: 15px; 
+}
+.cart-info p { 
+    margin: 0 0 12px; 
+    color: #6e746e ; 
+}
+.quantity { 
+    display: inline-flex; 
+    border: 1px solid #dedfd9; 
+    border-radius: 9px; 
+    overflow: hidden; 
+    align-items: center; 
+}
+.quantity button { 
+    width: 32px; 
+    height: 30px; 
+    border: 0; 
+    background: white; 
+}
+.quantity span { 
+    width: 30px; 
+    text-align: center; 
+    font-size: 13px; 
+}
+.cart-line-total { 
+    font-weight: 900; 
+}
+.summary { 
+    padding: 25px; 
+    position: sticky; 
+    top: 95px; 
+}
+.summary h2 { 
+    margin-top: 0; 
+}
+.summary > div { 
+    display: flex; 
+    justify-content: space-between; 
+    padding: 9px 0; 
+}
+.summary hr { 
+    border: 0; 
+    border-top: 1px solid #dedfd9; 
+    margin: 12px 0; 
+}
+.summary-total { 
+    font-size: 20px; 
+}
+.summary .btn { 
+    margin-top: 20px; 
+}
+.wishlist-grid { 
+    display: grid; 
+    grid-template-columns: repeat(3,1fr); 
+    gap: 18px; 
+}
+.wishlist-item { 
+    padding: 16px; 
+    display: grid; 
+    grid-template-columns: 120px 1fr; 
+    gap: 18px; 
+    align-items: center; 
+}
+.wishlist-item img { 
+    width: 120px; 
+    height: 120px; 
+    object-fit: contain; 
+    background: #f2f2ee; 
+    border-radius: 12px; 
+}
+.wishlist-item h3 { 
+    font-size: 15px; 
+    line-height: 1.3; 
+    margin: 0 0 8px; 
+}
+.wishlist-item strong { 
+    font-size: 18px; 
+}
+.row-actions { 
+    display: flex; 
+    align-items: center; 
+    gap: 8px; 
+    margin-top: 14px; 
+}
+.orders-list { 
+    display: grid; 
+    gap: 15px; 
+    margin-bottom: 25px; 
+}
+.order-card { 
+    padding: 20px; 
+}
